@@ -1,0 +1,138 @@
+.footer {
+    padding: 24px 0;
+    line-height: 16px;
+    font-size: 13px;
+    color: $secondary-color;
+    background: $bg-footer;
+
+    a {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+        text-decoration: none;
+        transition: color 300ms ease;
+
+        &:hover {
+            color: $primary-blue;
+        }
+    }
+
+
+    .box-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copy {
+        padding-right: 40px;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    &__list {
+        display: flex;
+        color: $footer-list-grey;
+        border-left: 1px solid $btn-border-primary;
+        
+        @media (max-width: 430px) {
+            width: 200px;
+            flex-direction: column;
+        }
+
+        &:last-child {
+            margin-left: 40px;
+
+        }
+
+        &-item {
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 1064px) {
+                margin-left: 20px;
+            }
+
+            @media (max-width: 430px) {
+                margin-left: 0;
+            }
+           
+
+            span {
+                margin-left: 10px;
+                line-height: 20px;
+                white-space: nowrap;
+            }
+
+            img {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width: 1064px) {
+    .footer {
+        &__copy {
+            padding-right: 20px;
+        }
+
+        &__list {
+            &:last-child {
+                margin-left: 20px;
+            }
+
+             
+        }
+    }
+}
+
+
+
+@media(max-width: 949px) {
+    .footer {
+        .box-content {
+            flex-wrap: wrap;
+        }
+
+        &__copy {
+            margin-top: 20px;
+            padding-right: 0;
+            max-width: 100%;
+            width: 100%;
+            order: 1;
+            text-align: center;
+        }
+
+        &__list {
+            border-left: 0;
+
+            &-item {
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .footer {
+        .box-content {
+            flex-direction: column;
+        }
+
+        &__list {
+            &:last-child {
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
+    }
+
+}

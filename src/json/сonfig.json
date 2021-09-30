@@ -1,0 +1,23 @@
+{
+    "global": {
+        "lang": "ru",
+        "title": "Страница HTML",
+        "styles": [
+            "./css/main.css"
+        ],
+        "scripts": [
+            "./js/main.js"
+        ],
+        "fonts": [
+            "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap"
+        ]
+    },
+    "main": {
+        "title": "Главная страница",
+        "description": "Описание главной страницы"
+    },
+    "cat": {
+        "title": "Страница категории",
+        "description": "Описание страницы категории"
+    }
+}

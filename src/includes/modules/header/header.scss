@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba($header-bg, .9);
+
+    .box-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        padding: 33px 0;
+        font-family: 'Raleway', sans-serif;
+        line-height: 34px;
+        font-size: 28px;
+        color: $secondary-color;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        span {
+            color: $primary-blue;
+        }
+
+
+        @media (max-width: 767px) {
+            padding: 10px 0;
+            line-height: 24px;
+            font-size: 20px;
+            overflow: hidden;
+        }
+    }
+
+
+}

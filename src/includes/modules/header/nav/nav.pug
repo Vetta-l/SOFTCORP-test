@@ -1,0 +1,18 @@
+-
+    var navList = [
+        {link: "##", title: "Бизнес", active: true},
+        {link: "##", title: "О нас"},
+        {link: "##", title: "Цены"},
+        {link: "##", title: "Оформить заказ"},
+    ]
+
+
+nav.nav 
+    ul.nav__list
+        each item in navList
+            if(item.active)
+                li.nav__list-item.active
+                    a.nav__list-link(href= item.link)= item.title
+            else
+                li.nav__list-item
+                    a.nav__list-link(href= item.link)= item.title

@@ -1,0 +1,49 @@
+block config
+
+<!DOCTYPE html>
+html(lang= meta.global.lang)
+    head
+        include meta
+        if(params)
+            title= params.title
+        else
+            title= meta.global.title
+
+        if(params)
+            if(params.description)
+                meta(name="description", content= params.description)
+
+            if(params.ogTitle)
+                meta(property="og:title", content= params.ogTitle)
+
+            if(params.ogDescription)
+                meta(property="og:description", content= params.ogDescription)
+
+
+        block fonts
+            if(meta.global.fonts)
+                each font in meta.global.fonts
+                    link(href= font, rel="stylesheet")
+
+
+        block styles
+            if(meta.global.styles)
+                each style in meta.global.styles
+                    link(href= style, rel="stylesheet")
+
+
+        block headScripts
+            if(meta.global.headScripts)
+                each script in meta.global.headScripts
+                    script(src= script)
+
+
+    body.body
+        .wrapper
+            block content
+
+
+        block scripts
+            if(meta.global.scripts)
+                each script in meta.global.scripts
+                    script(src= script)

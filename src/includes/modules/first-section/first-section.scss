@@ -1,0 +1,25 @@
+.section__first {
+    min-height: 100vh;
+    overflow: hidden;
+    background: url(../img/first-section-bg.jpg) no-repeat center;
+    background-size: cover;
+
+    .box-content {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (max-width: 767px)  {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &-text {
+        max-width: 780px;
+        width: 100%;
+    } 
+}

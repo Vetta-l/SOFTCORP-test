@@ -1,0 +1,18 @@
+.section__dark {
+    background: $bg-primary url(../img/bg-map.png) no-repeat center top;
+    background-size: contain;
+
+    h3 {
+        text-align: center;
+    }
+
+    .box-content {
+        padding-top: 120px;
+        padding-bottom: 150px;
+
+        @media(max-width: 850px) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+}

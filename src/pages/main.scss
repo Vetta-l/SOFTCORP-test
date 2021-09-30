@@ -1,0 +1,22 @@
+@import "./../includes/core/styl/vars-color.scss";
+@import "./../includes/core/styl/reset.scss";
+@import "./../includes/core/styl/core.scss";
+
+
+@import "./../includes/modules/form-elemets/form-area.scss";
+@import "./../includes/modules/form-elemets/select.scss";
+@import "./../includes/modules/form-elemets/input-file.scss";
+@import "./../includes/modules/form-elemets/input-range.scss";
+@import "./../includes/modules/form-elemets/input-text.scss";
+
+@import "./../includes/modules/buttons/buttons.scss";
+@import "./../includes/modules/theme-list/theme-list.scss";
+
+
+@import "./../includes/modules/header/header.scss";
+@import "./../includes/modules/header/nav/nav.scss";
+
+@import "./../includes/modules/first-section/first-section.scss";
+@import "./../includes/modules/dark-section/dark-section.scss";
+
+@import "./../includes/modules/footer/footer.scss";

@@ -1,0 +1,11 @@
+.form-filed {
+    padding: 12px 36px 12px 10px;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+    font-size: 18px;
+    color: $primary-field-color;
+    background-color: rgba($field-bg-first, .85);
+    border: 1px solid $field-border-first;
+    border-radius: 3px;
+    box-sizing: border-box;
+}

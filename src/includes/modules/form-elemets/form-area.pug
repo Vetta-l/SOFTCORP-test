@@ -1,0 +1,27 @@
+.form-area
+    form(id="order", name="order", action="", method="POST", enctype="multipart/form-data")
+        fieldset
+            #select-1.select
+
+                button(type="button", class="select__toggle", name="car", value="", data-select="toggle", data-index="-1") Выберите тип системы
+
+                .select__dropdown
+                    ul.select__options
+                        li.select__option(data-select="option", data-value="Sed", data-index="0") Sed ut perspiciatis
+                        li.select__option(data-select="option", data-value="Nemo", data-index="1") Nemo enim ipsam
+                        li.select__option(data-select="option", data-value="quidem", data-index="2") Et harum quidem
+                            ul.select__options-group
+                                li.select__option(data-select="option", data-value="autem", data-index="3") Temporibus autem
+                        li.select__option(data-select="option", data-value="rerum", data-index="4") Itaque earum rerum
+            input(type="text", name="mail", class="form-filed", placeholder="Ваш e-mail")
+            input(type="text", name="name", class="form-filed", placeholder="Ваше имя")
+
+            .range-slider
+                .range-slider__wrap
+                    span.range-label Sed ut perspiciatis, unde omnis iste natus
+                    <input id="range1", class="range-filed", type="range", name="range1", min="1", max="100", step="1", value="5" />
+            .form-upload
+                input(type="file", name="upload", id="upload", class="form-upload__field")
+                .form-upload__btn
+                    span Прикрепить файл
+        button(type="submit").btn.btn--blue Отправить

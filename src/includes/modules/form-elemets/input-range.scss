@@ -1,0 +1,56 @@
+.range {
+    &-slider {
+        grid-column: span 2;
+
+        @media(max-width: 560px) {
+            grid-column: span 1;
+        }   
+
+        &__wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &-label,
+    &-filed {
+        display: block;
+    }
+
+    &-filed {
+        margin-top: 16px;
+        width: 100%;
+        height: 6px;
+        background-color: rgba($field-bg-first, .75);
+        border: 1px solid $field-border-first;
+        border-radius: 3px;
+        appearance: none;
+
+        &::-webkit-slider-thumb {
+            width: 20px;
+            height: 20px;
+            background: $primary-blue;
+            border-radius: 50%;
+            border: 3px solid $icn-border;
+            appearance: none;
+            cursor: pointer;
+            transition: background 300ms ease;
+
+            &:hover {
+                background: $icn-border;
+            }
+        }
+    }
+    &-label,
+    &-data {
+        color: $secondary-color;
+    }
+
+    &-data {
+        span {
+            margin-left: 2px;
+        }
+    }
+}

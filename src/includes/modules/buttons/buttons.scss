@@ -1,0 +1,47 @@
+.btn {
+    width: 183px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 300ms ease;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &--blue {
+        color: $btn-text-primary;
+        border: 1px solid $btn-border-primary;
+        background-color: $btn-bg-primary;
+    }
+
+    &--white {
+        color: $btn-text-secondary;
+        border: 1px solid $btn-border-secondary;
+        background-color: $btn-bg-secondary;
+    }
+
+    &__box {
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .btn {
+            &:last-child {
+                margin-left: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+-
+    let themeItems = [
+        {
+            icn: "./img/svg/icn-search.svg",
+            text: "Lorem ipsum dolor sit amet"
+        },
+        {
+            icn: "./img/svg/icn-percent.svg",
+            text: "Сonsectetura dipiscing elit"
+        },
+        {
+            icn: "./img/svg/icn-doc.svg",
+            text: "Sed do eiusmod tempor"
+        },
+        {
+            icn: "./img/svg/icn-mail.svg",
+            text: "Esse cillum dolore eu fugiat"
+        },
+        {
+            icn: "./img/svg/icn-price.svg",
+            text: "Excepteur sint occaecat cupidatat non proident"
+        },
+    ]
+
+
+.theme-list
+    each item in themeItems
+        .theme-list__item
+            .theme-list__icon
+                img(src= item.icn, alt="")
+            .theme-list__text= item.text
